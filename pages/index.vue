@@ -4,9 +4,6 @@
       <AppHero :event="heroEvent" />
       <div class="upcoming mt-10 pb-10 px-3 lg:px-0">
         <h2 class="text-2xl font-bold mb-4 text-gray-700">Kommande event</h2>
-        <!-- <div class="grid grid-cols-3 gap-10 mt-6"> -->
-        <!--   <EventCard v-for="index in events" :key="index" /> -->
-        <!-- </div> -->
         <EventTable :events="restOfTheEvents" />
       </div>
     </div>
@@ -18,7 +15,7 @@ useSeoMeta({
   ogTitle: "Riff Raff Live!",
   description: "Riff Raff Live events.",
   ogDescription: "Riff Raff Live events.",
-  ogImage: "https://example.com/image.png",
+  ogImage: "/images/logo.webp",
   twitterCard: "summary_large_image",
 });
 const events = ref([
@@ -37,7 +34,7 @@ const events = ref([
     id: 2,
     title: "Our Man In The Field",
     date: "2 maj",
-    location: "Gränden Käk och Bärs",
+    location: "Plats: TBA",
     img: "",
     body: "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
     ticketLink: "#",
@@ -50,7 +47,7 @@ const events = ref([
     location: "Plats: TBA",
     img: "",
     body: "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    ticketLink: "#",
+    ticketLink: "http://some.se",
     published: true,
   },
   {

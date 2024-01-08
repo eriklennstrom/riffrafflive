@@ -21,8 +21,8 @@ const props = defineProps({
   <a
     :href="link"
     target="_blank"
-    class="group relative inline-flex border focus:outline-none w-full sm:w-auto btn uppercase text-sm"
-    :class="fill ? 'fill' : '', variant === 'light' ? 'light' : 'dark', disabled ? 'disabled' : ''"
+    class="group relative inline-flex border focus:outline-none w-auto btn uppercase text-sm"
+    :class="fill ? 'fill' : '', variant === 'light' ? 'light' : 'dark', disabled || link === '#' ? 'disabled'  : ''"
   >
     <span
       v-bind="$attrs"
@@ -35,9 +35,9 @@ const props = defineProps({
 </template>
 <style lang="postcss" scoped>
 .btn {
-  .disabled {
-    @apply cursor-not-allowed opacity-40;
-}
+  &.disabled {
+    @apply cursor-not-allowed opacity-40 pointer-events-none;
+  }
   span {
     @apply transform transition-transform border;
   }
@@ -60,7 +60,7 @@ const props = defineProps({
       }
     }
   }
-  &:hover {
+  &:hover:not(.disabled) {
     span {
       @apply -translate-y-1 -translate-x-1;
     }

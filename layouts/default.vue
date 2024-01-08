@@ -1,10 +1,12 @@
 <template>
   <div class="min-h-screen">
-    <div class="frame text-gray-900 mt-3 md:mt-5 ml-16 mr-3 md:mr-5">
+    <div class="frame text-gray-900 mt-3 md:mt-5 ml-3 md:ml-16 mr-3 md:mr-5">
       <nav class="text-lg px-6 py-6">
-        <div class="container mx-auto mt-28 mb-24 flex items-center justify-between">
-          <div class="absolute right-14">
-          	<NuxtLink to="/">
+        <div
+          class="container mx-auto md:mt-28 md:mb-24 md:flex items-center justify-between"
+        >
+          <div class="md:absolute md:right-14 flex justify-center">
+            <NuxtLink to="/">
               <img
                 src="/images/logo.webp"
                 alt="Ward Hayden & The Outliers (US) - press photo"
@@ -12,8 +14,8 @@
               />
             </NuxtLink>
           </div>
-          <div>
-            <ul class="flex space-x-8 text-3xl text-red-400">
+          <div class="mt-10 md:mt-0">
+            <ul class="flex  space-x-8 text-3xl text-red-400">
               <li><NuxtLink to="/">Hem</NuxtLink></li>
               <li><NuxtLink to="#events">Events</NuxtLink></li>
               <!-- <li><NuxtLink to="#contact">Kontakt</NuxtLink></li> -->

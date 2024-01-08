@@ -2,8 +2,8 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
-    baseURL: '/riffrafflive/',
-    buildAssetsDir: 'assets'
+    baseURL: process.env.NODE_ENV === "production" ? "/riffrafflive/" : "",
+    buildAssetsDir: "assets",
   },
-  modules: ['@nuxtjs/tailwindcss']
-})
+  modules: ["@nuxtjs/tailwindcss"],
+});
