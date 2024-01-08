@@ -47,7 +47,7 @@ const events = ref([
     location: "Plats: TBA",
     img: "",
     body: "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    ticketLink: "http://some.se",
+    ticketLink: "#",
     published: true,
   },
   {
