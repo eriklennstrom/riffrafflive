@@ -16,8 +16,9 @@
     <tbody>
       <tr
         class="py-6"
-        v-for="event in events"
-        :class="event.id % 2 !== 0 ? '' : 'bg-gray-200'"
+        v-for="(event, index) in events"
+        :class="index % 2 !== 0 ? '' : 'bg-gray-200'"
+          data-aos="fade-up" :data-aos-delay="(index + 1) * 200"
       >
         <td class="py-8 pl-4 w-2/6">
           <h3 class="text-lg font-bold">{{ event.title }}</h3>

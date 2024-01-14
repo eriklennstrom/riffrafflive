@@ -15,9 +15,9 @@
             </NuxtLink>
           </div>
           <div class="mt-10 md:mt-0">
-            <ul class="flex  space-x-8 text-3xl text-red-400">
-              <li><NuxtLink to="/">Hem</NuxtLink></li>
-              <li><NuxtLink to="#events">Events</NuxtLink></li>
+            <ul class="flex space-x-8 text-3xl text-red-400 font-bold">
+              <li><NuxtLink to="/" class="hover:text-gray-900 transition">Hem</NuxtLink></li>
+              <li><NuxtLink to="#events" class="hover:text-gray-900 transition">Events</NuxtLink></li>
               <!-- <li><NuxtLink to="#contact">Kontakt</NuxtLink></li> -->
             </ul>
           </div>
@@ -29,6 +29,7 @@
     </div>
   </div>
 </template>
+
 <style>
 .frame {
   background: rgba(246, 246, 246, 1);
