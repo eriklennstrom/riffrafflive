@@ -5,7 +5,7 @@
         <AppHero :event="heroEvent" />
       </Transition>
       <div class="upcoming mt-10 pb-10 px-3 lg:px-0">
-        <h2 class="text-2xl font-bold mb-4 text-gray-700">Kommande event</h2>
+        <h2 class="text-2xl font-bold mb-4">Kommande event</h2>
         <EventTable :events="restOfTheEvents" />
       </div>
     </div>
@@ -32,14 +32,14 @@ const events = ref([
     ticketLink: "https://secure.tickster.com/en/e1wdtzwvpk3g0yr/products",
     published: true,
   },
-    {
+  {
     id: 2,
     title: "Trapper Schoepp",
     date: "20:e mars",
     location: "Gränden Käk & Bärs",
     img: "",
     body: "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    ticketLink: "#",
+    ticketLink: "https://hej.se",
     published: true,
   },
   {
@@ -72,7 +72,6 @@ const events = ref([
     ticketLink: "#",
     published: true,
   },
-
 ]);
 const heroEvent = computed(() => {
   return events.value.slice(0, 1)[0];
@@ -81,8 +80,15 @@ const restOfTheEvents = computed(() => {
   return events.value.slice(1);
 });
 </script>
-<style scoped>
-  .v-enter-active,
+<style>
+html {
+  color: #e3e3e3;
+}
+body {
+  background: #121212;
+}
+
+.v-enter-active,
 .v-leave-active {
   transition: opacity 0.5s ease;
 }

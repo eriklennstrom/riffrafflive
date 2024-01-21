@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="hero text-white flex flex-col md:flex-row justify-between"
-  >
+  <div class="bg-red-400 text-white flex flex-col md:flex-row justify-between">
     <div class="md:w-1/2 px-8 py-6 flex flex-col content-between">
       <div class="titles flex flex-col">
         <small class="uppercase text-lg md:text-2xl mb-2" data-aos="fade-in" data-aos-delay="300">
@@ -28,7 +26,7 @@
           text="Mer info"
           size="lg"
           variant="light"
-          link="#"
+          link="http://asd.se"
         />
       </div>
     </div>
