@@ -8,6 +8,7 @@
         <h2 class="text-2xl font-bold mb-4">Kommande event</h2>
         <EventTable :events="restOfTheEvents" />
       </div>
+      <AppForm />
     </div>
   </div>
 </template>
@@ -24,7 +25,7 @@ const events = ref([
   {
     id: 1,
     title: "Ward Hayden & The Outliers (US)",
-    subtitle: "Klubb Rootsy",
+    subtitle: "Nästa spelning",
     date: "1:a feb",
     location: "Gränden Käk & Bärs",
     img: "",
@@ -39,7 +40,7 @@ const events = ref([
     location: "Gränden Käk & Bärs",
     img: "",
     body: "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    ticketLink: "https://hej.se",
+    ticketLink: "#",
     published: true,
   },
   {
