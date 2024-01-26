@@ -39,9 +39,9 @@
               <BaseButton
                 text="Biljetter"
                 :fill="true"
-                :link="event.ticketLink"
+                link="event.ticketLink"
               />
-              <BaseButton text="Mer info" disabled />
+              <BaseButton text="Mer info" link="http" variant="light"/>
             </div>
           </td>
         </tr>

@@ -35,6 +35,7 @@ const props = defineProps({
 </template>
 <style lang="postcss" scoped>
 .btn {
+  @apply transition;
   &.disabled {
     @apply cursor-not-allowed opacity-40 pointer-events-none;
   }
@@ -53,16 +54,22 @@ const props = defineProps({
     }
   }
   &.light {
-    @apply border-white;
+    @apply border-white bg-transparent;
     &.fill {
       span {
-        @apply text-gray-900 bg-white border-white;
+        @apply text-gray-900 border-white;
       }
     }
   }
   &:hover:not(.disabled) {
+    @apply border-gray-500;
+    &.fill {
+      span {
+        @apply bg-gray-700 text-white;
+      }
+    }
     span {
-      @apply -translate-y-1 -translate-x-1;
+      @apply -translate-y-1 -translate-x-1 bg-white text-gray-700;
     }
   }
 }
