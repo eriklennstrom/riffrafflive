@@ -36,7 +36,13 @@
           variant="dark"
           :link="props.event.ticketLink"
         />
-        <BaseButton text="Mer info" size="lg" variant="light" link="#" />
+        <BaseButton
+          text="Mer info"
+          size="lg"
+          variant="light"
+          :internal-link="true"
+          :link="'/events/' + props.event.slug"
+        />
       </div>
     </div>
     <div class="md:w-1/2">

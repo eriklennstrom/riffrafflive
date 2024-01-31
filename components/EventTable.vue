@@ -13,7 +13,11 @@
       </div>
       <div class="buttons flex space-x-2 float-right pr-4 mt-3">
         <BaseButton text="Biljetter" :fill="true" :link="event.ticketLink" />
-        <BaseButton text="Mer info" disabled />
+        <BaseButton
+          text="Mer info"
+          :internal-link="true"
+          :link="'/events/' + event.slug"
+        />
       </div>
     </div>
     <table class="hidden md:table table-auto xl:table-fixed w-full">
@@ -21,7 +25,7 @@
         <tr
           class="py-6"
           v-for="(event, index) in events"
-          :class="index % 2 !== 0 ? '' : 'bg-stripe'"
+          :class="index % 2 !== 0 ? '' : 'bg-layer-2'"
           data-aos="fade-up"
           :data-aos-delay="(index + 1) * 200"
         >
@@ -41,7 +45,12 @@
                 :fill="true"
                 link="event.ticketLink"
               />
-              <BaseButton text="Mer info" link="http" variant="light"/>
+              <BaseButton
+                variant="light"
+                text="Mer info"
+                :internal-link="true"
+                :link="'/events/' + event.slug"
+              />
             </div>
           </td>
         </tr>
@@ -52,8 +61,3 @@
 <script setup>
 const props = defineProps(["events"]);
 </script>
-<style lang="postcss">
-.bg-stripe {
-  background: rgba(255, 255, 255, 0.11);
-}
-</style>

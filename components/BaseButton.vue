@@ -1,6 +1,10 @@
 <script lagn="ts" setup>
 const props = defineProps({
   text: String,
+  internalLink: {
+    type: Boolean,
+    default: false,
+  },
   size: {
     type: String,
     default: "md",
@@ -14,15 +18,39 @@ const props = defineProps({
     default: false,
   },
   link: String,
-  disabled: Boolean
+  disabled: Boolean,
 });
 </script>
 <template>
+  <NuxtLink
+    v-if="internalLink"
+    :to="link"
+    class="group relative inline-flex border focus:outline-none w-auto btn uppercase text-sm"
+    :class="
+      (fill ? 'fill' : '',
+      variant === 'light' ? 'light' : 'dark',
+      disabled || link === '#' ? 'disabled' : '')
+    "
+  >
+    <span
+      v-bind="$attrs"
+      class="px-2 py-1 inline-flex items-center justify-center self-stretch"
+      :class="size === 'lg' ? 'px-3 py-2 text-lg' : ''"
+    >
+      {{ text }}
+    </span>
+  </NuxtLink>
+
   <a
+    v-else
     :href="link"
     target="_blank"
     class="group relative inline-flex border focus:outline-none w-auto btn uppercase text-sm"
-    :class="fill ? 'fill' : '', variant === 'light' ? 'light' : 'dark', disabled || link === '#' ? 'disabled'  : ''"
+    :class="
+      (fill ? 'fill' : '',
+      variant === 'light' ? 'light' : 'dark',
+      disabled || link === '#' ? 'disabled' : '')
+    "
   >
     <span
       v-bind="$attrs"

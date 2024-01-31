@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen">
-    <div class="frame mt-3 md:mt-5 ml-3 md:ml-16 mr-3 md:mr-5">
+    <div class="bg-layer-2 mt-3 md:mt-5 ml-3 md:ml-16 mr-3 md:mr-5">
       <nav class="text-lg px-6 py-6">
         <div
           class="container mx-auto md:mt-28 md:mb-24 md:flex items-center justify-between"
@@ -58,7 +58,10 @@
 </template>
 
 <style>
-.frame {
-  background: rgba(255, 255, 255, 0.05);
+html {
+  color: #e3e3e3;
+}
+body {
+  background: #121212;
 }
 </style>
