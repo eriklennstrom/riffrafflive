@@ -3,21 +3,21 @@
     <div class="bg-layer-2 mt-3 md:mt-5 ml-3 md:ml-16 mr-3 md:mr-5">
       <nav class="text-lg px-6 py-6">
         <div
-          class="container mx-auto md:mt-28 md:mb-24 md:flex items-center justify-between"
+          class="w-full md:right-14 flex justify-center"
+          data-aos="fade-in"
+          data-aos-delay="300"
         >
-          <div
-            class="md:absolute md:right-14 flex justify-center"
-            data-aos="fade-in"
-            data-aos-delay="300"
-          >
-            <NuxtLink to="/">
-              <img
-                src="/images/logo.webp"
-                alt="Riff Raff Live! logo"
-                class="w-36"
-              />
-            </NuxtLink>
-          </div>
+          <NuxtLink to="/">
+            <img
+              src="/images/logo-horizontal.webp"
+              alt="Riff Raff Live! logo"
+            />
+          </NuxtLink>
+        </div>
+
+        <div
+          class="container mx-auto md:mt-10 md:mb-14 md:flex items-center justify-between"
+        >
           <div class="mt-10 md:mt-0">
             <ul class="flex space-x-8 text-3xl text-red-400 font-bold">
               <li data-aos="fade-left" data-aos-delay="1000">
@@ -50,7 +50,7 @@
           </div>
         </div>
       </nav>
-      <main class="container mx-auto">
+      <main class="container mx-auto mb-5">
         <slot />
       </main>
     </div>

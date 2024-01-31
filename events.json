@@ -6,9 +6,10 @@
     "subtitle": "Nästa spelning",
     "date": "1:a feb",
     "location": "Gränden Käk & Bärs",
-    "img": "",
+    "img": "ward.webp",
     "body": "Oemotståndliga Ward Hayden & The Outliers gjorde en succéturné här våren 2023 och önskemålen, eller rent av kraven, att de ska komma tillbaka snart har varit många och högljudda.\n Så, i januari 2024 återvänder Ward Hayden och hans band! Med sin bitterljuva hybrid av traditionell country, klassisk rock 'n' roll och nutida Americana har de blivit publikfavoriter i Skandinavien. \nI samband med turnén släpps även Ward Hayden & The Outliers nya album. En platta där Hayden tagit ett stort kliv framåt som låtskrivare och där bandet vidgat sin musikaliska palett ytterligare. De medryckande upptempo-låtarna vi vant oss vid kompletteras nu med några storslagna ballader som tydligt visar att Ward Hayden & The Outliers vuxit till sig utan att förlora sin spontana charm.",
     "ticketLink": "https://secure.tickster.com/en/e1wdtzwvpk3g0yr/products",
+    "spotify": "5ucHWsMlG8NB9Q5vhdPCZr",
     "published": true
   },
   {
@@ -17,9 +18,10 @@
     "slug": "trapper-schoepp",
     "date": "20:e mars",
     "location": "Gränden Käk & Bärs",
-    "img": "",
-    "body": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
-    "ticketLink": "#",
+    "img": "trapper.webp",
+    "body": "Trapper Schoepp och hans band The Shades, har gjort sin egen variant av \"Northern Soul\" där uppe i Michigan i 15 år nu. I april 2018 turnerade han för första gången i Skandinavien och mötte en entusiastisk publik. Nu, två år senare, kommer han tillbaka än en gång. Med sig har han sitt band och senaste plattan \"Siren Songs\".\nMilwaukees bästa export vet hur man tar en publik med storm. En helt sanslös mix av poprock med folkrock à la Byrds och Waterboys. Visst finns där Americana-element, men mest hörs ett av Jerry Lee Lewis gamla misshandlade pianon med raketbränsle på tangenterna.Och den där rena, ungdomliga spelglädjen som vissa artister har kvar livet ut, andra inte.\nTrapper har lirat med såväl Jayhawks som med The Wallflowers, så där nånstans ligger en del av storheten.",
+    "ticketLink": "https://secure.tickster.com/en/6xrfp6x8a7k4l7g/products",
+    "spotify": "1FC9UcdlFDyATpXi1IFvLS",
     "published": true
   },
   {
@@ -28,9 +30,10 @@
     "slug": "jesper-lindell",
     "date": "11:e april",
     "location": "Gränden Käk & Bärs",
-    "img": "",
-    "body": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+    "img": "jesper.webp",
+    "body": "Sedan Jesper Lindells album \"Twilights\" släpptes i januari 22 har det hänt en hel del. Plattan hyllades samstämmigt i svensk och internationell press och sedan releasen har Jesper och hans band gjort över 100 spelningar i Sverige och Europa.",
     "ticketLink": "#",
+    "spotify": "3P9Fc9AmQyNFIu2WJdeWoN",
     "published": true
   },
   {
@@ -42,7 +45,8 @@
     "img": "",
     "body": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
     "ticketLink": "#",
-    "published": true
+    "spotify": "5ucHWsMlG8NB9Q5vhdPCZr",
+    "published": false
   },
   {
     "id": 5,
@@ -50,9 +54,10 @@
     "slug": "our-man-in-the-field",
     "date": "2 maj",
     "location": "Plats: TBA",
-    "img": "",
-    "body": "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+    "img": "our-man-in-the-field-press-2023.webp",
+    "body": "Engelska Our Man In The Field aka Alex Ellis följer upp 2020 års album ”The Company of Strangers” med nya ”Gold on the Horizon” som släpps 3 november. Elva spår producerade och mixade av Tucker Martine (Modest Mouse, Rosanne Cash, case/lang/veirs) i Flora Recording and Playback i Portland, OR. ”The Company of Strangers” gavs ut av svenska etiketten Rocksnob och i samband med det turnerade Our Man In The Field flitigt i Sverige. Nu kommer de äntligen tillbaka med ett gäng nya låtar i kappsäcken.",
     "ticketLink": "#",
+    "spotify": "20iCBa8pr4rfazbp0cHQO4",
     "published": true
   }
 ]

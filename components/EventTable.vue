@@ -3,7 +3,7 @@
     <div
       class="md:hidden row flex flex-col md:flex-row align-center justify-between w-full py-4 px-3"
       v-for="event in events"
-      :class="event.id % 2 !== 0 ? '' : 'bg-gray-200'"
+      :class="event.id % 2 !== 0 ? '' : 'bg-layer-2'"
     >
       <h3 class="text-lg font-bold">{{ event.title }}</h3>
       <div>
@@ -12,11 +12,19 @@
         <small class="text-sm">{{ event.location }}</small>
       </div>
       <div class="buttons flex space-x-2 float-right pr-4 mt-3">
-        <BaseButton text="Biljetter" :fill="true" :link="event.ticketLink" />
         <BaseButton
+          size="lg"
+          text="Biljetter"
+          :fill="true"
+          :link="event.ticketLink"
+        />
+        <BaseButton
+          size="lg"
+          variant="light"
           text="Mer info"
           :internal-link="true"
           :link="'/events/' + event.slug"
+          :disabled="!event.published"
         />
       </div>
     </div>
@@ -43,13 +51,14 @@
               <BaseButton
                 text="Biljetter"
                 :fill="true"
-                link="event.ticketLink"
+                :link="event.ticketLink"
               />
               <BaseButton
                 variant="light"
                 text="Mer info"
                 :internal-link="true"
                 :link="'/events/' + event.slug"
+                :disabled="!event.published"
               />
             </div>
           </td>

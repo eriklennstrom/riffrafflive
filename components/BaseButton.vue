@@ -26,11 +26,11 @@ const props = defineProps({
     v-if="internalLink"
     :to="link"
     class="group relative inline-flex border focus:outline-none w-auto btn uppercase text-sm"
-    :class="
-      (fill ? 'fill' : '',
-      variant === 'light' ? 'light' : 'dark',
-      disabled || link === '#' ? 'disabled' : '')
-    "
+    :class="[
+      fill ? 'fill' : '',
+      variant,
+      disabled || link === '#' ? 'disabled' : '',
+    ]"
   >
     <span
       v-bind="$attrs"
@@ -46,11 +46,11 @@ const props = defineProps({
     :href="link"
     target="_blank"
     class="group relative inline-flex border focus:outline-none w-auto btn uppercase text-sm"
-    :class="
-      (fill ? 'fill' : '',
-      variant === 'light' ? 'light' : 'dark',
-      disabled || link === '#' ? 'disabled' : '')
-    "
+    :class="[
+      fill ? 'fill' : '',
+      variant,
+      disabled || link === '#' ? 'disabled' : '',
+    ]"
   >
     <span
       v-bind="$attrs"
@@ -64,6 +64,18 @@ const props = defineProps({
 <style lang="postcss" scoped>
 .btn {
   @apply transition;
+  &:hover:not(.disabled) {
+    @apply border-gray-500;
+    &.fill {
+      span {
+        @apply bg-gray-700 text-white;
+      }
+    }
+    span {
+      @apply -translate-y-1 -translate-x-1 bg-white text-gray-700;
+    }
+  }
+
   &.disabled {
     @apply cursor-not-allowed opacity-40 pointer-events-none;
   }
@@ -81,23 +93,24 @@ const props = defineProps({
       }
     }
   }
+  &.red {
+    @apply border-red-400;
+    span {
+      @apply border-red-400 bg-gray-100;
+    }
+    &.fill {
+      span {
+        @apply text-white bg-red-400 border-red-400;
+      }
+    }
+  }
+
   &.light {
     @apply border-white bg-transparent;
     &.fill {
       span {
         @apply text-gray-900 border-white;
       }
-    }
-  }
-  &:hover:not(.disabled) {
-    @apply border-gray-500;
-    &.fill {
-      span {
-        @apply bg-gray-700 text-white;
-      }
-    }
-    span {
-      @apply -translate-y-1 -translate-x-1 bg-white text-gray-700;
     }
   }
 }
