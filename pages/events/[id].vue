@@ -60,7 +60,7 @@
 <script setup>
 import events from "/events.json";
 const route = useRoute();
-const event = events.find((ev) => ev.slug === route.params.slug);
+const event = events.find((ev) => ev.slug === route.params.id);
 useSeoMeta({
   title: event.title + " - Riff Raff Live!",
   ogTitle: event.title + " - Riff Raff Live!",
