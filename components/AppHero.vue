@@ -47,8 +47,8 @@
     </div>
     <div class="md:w-1/2">
       <img
-        src="/images/ward.webp"
-        alt="Ward Hayden & The Outliers (US) - press photo"
+        :src="'/images/' + props.event.img"
+        :alt="props.event.title + ' - press photo'"
         class="pb-4 md:py-8 ml-auto px-8 w-full md:w-auto"
       />
     </div>
