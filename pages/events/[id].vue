@@ -20,21 +20,21 @@
           {{ event.body }}
         </p>
       </div>
-      <iframe
-        class="mt-3 mb-5"
-        style="border-radius: 0px"
-        :src="
-          'https://open.spotify.com/embed/artist/' +
-          event.spotify +
-          '?utm_source=generator&theme=0'
-        "
-        width="100%"
-        height="352"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
+      <!-- <iframe -->
+      <!--   class="mt-3 mb-5" -->
+      <!--   style="border-radius: 0px" -->
+      <!--   :src=" -->
+      <!--     'https://open.spotify.com/embed/artist/' + -->
+      <!--     event.spotify + -->
+      <!--     '?utm_source=generator&theme=0' -->
+      <!--   " -->
+      <!--   width="100%" -->
+      <!--   height="352" -->
+      <!--   frameBorder="0" -->
+      <!--   allowfullscreen="" -->
+      <!--   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" -->
+      <!--   loading="lazy" -->
+      <!-- ></iframe> -->
     </article>
     <aside class="col-span-2 p-5 order-first md:order-none">
       <h2 class="text-xl font-bold">Information & Köp</h2>
