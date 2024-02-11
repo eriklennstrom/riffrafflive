@@ -3,8 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["@fortawesome/fontawesome-svg-core/styles.css"],
   app: {
-    baseURL:
-      process.env.NODE_ENV === "production" ? "https://riffrafflive.se/" : "",
+    baseURL: process.env.NODE_ENV === "production" ? "/" : "",
     buildAssetsDir: "assets",
   },
   modules: ["@nuxtjs/tailwindcss", "nuxt-aos", "nuxt-gtag"],
